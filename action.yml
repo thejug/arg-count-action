@@ -19,7 +19,7 @@ runs:
       shell: bash
     - id: return-result
       run: |
-        echo "num-args=`${{ github.action_path }}/count-args.sh ${{ inputs.arguments-to-count }}`" >>$GITHUB_OUTPUT
+        echo "num-args=`${{ github.action_path }}/count-arg.sh ${{ inputs.arguments-to-count }}`" >>$GITHUB_OUTPUT
         ls -l ${{ github.action_path }}
       shell: bash
 branding:
