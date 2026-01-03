@@ -19,8 +19,9 @@ runs:
       shell: bash
     - id: return-result
       run: |
-        echo "num-args=`${{ github.action_path }}/count-arg.sh ${{ inputs.arguments-to-count }}`" >>$GITHUB_OUTPUT
-        ls -l ${{ github.action_path }}
+        #echo "num-args=`${{ github.action_path }}/count-arg.sh ${{ inputs.arguments-to-count }}`" >>$GITHUB_OUTPUT
+        count="$(bash "${{ github.action_path }}/count-args.sh" "${{ inputs.arguments-to-count }}")"
+        echo "num-args=$count" >> "$GITHUB_OUTPUT"
       shell: bash
 branding:
   icon: 'aperture'
