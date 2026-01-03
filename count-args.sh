@@ -1,4 +1,5 @@
 #!/bin/bash
 
-args=($@)
-echo ${#args[@]}
+#args=($@)
+#echo ${#args[@]}
+echo $#
