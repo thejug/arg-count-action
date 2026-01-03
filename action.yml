@@ -20,7 +20,7 @@ runs:
     - id: return-result
       run: |
         echo "num-args=`${{ github.action_path }}/count-args.sh ${{ inputs.arguments-to-count }}`" >>$GITHUB_OUTPUT
-        shell: bash
+      shell: bash
 branding:
   icon: 'aperture'
   color: 'gray-dark'
