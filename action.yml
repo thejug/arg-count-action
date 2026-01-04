@@ -1,5 +1,5 @@
 name: 'Argument Counter'
-description: 'Count # of arguments passed in'
+description: 'This action prints out the number of arguments passed in'
 author: 'Thejaswi M'
 inputs:
   arguments-to-count: 
